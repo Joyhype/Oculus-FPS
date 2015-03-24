@@ -8,6 +8,10 @@
 *.unityproj
 *.sln
 *.suo
+*.png
+*.psd
+*.jpg 
+*.gif
 
 *.userprefs
 builds/
