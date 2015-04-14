@@ -5,7 +5,7 @@ public class DayNight : MonoBehaviour {
 
 	public Color colorStart = Color.blue;
     public Color colorEnd = Color.black;
-    public float duration = 120F;
+    public float duration = 20F;
 
 	IEnumerator NightTime () {
 		yield return new WaitForSeconds(0);
