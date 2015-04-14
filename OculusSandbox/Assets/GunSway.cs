@@ -19,9 +19,9 @@ public class GunSway : MonoBehaviour {
 	}
 
 	void Start() {
-		iTween.MoveBy (gun, iTween.Hash ("y", -2.0f, 
-		                                      "time", 0.8f, 
+		iTween.MoveBy (gun, iTween.Hash ("y", -1.5f, 
+		                                      "time", 2f, 
 		                                      "looptype", iTween.LoopType.pingPong,
-		                                      "easetype", iTween.EaseType.easeOutBack));
+		                                      "easetype", iTween.EaseType.easeInOutBack));
 	}
 }

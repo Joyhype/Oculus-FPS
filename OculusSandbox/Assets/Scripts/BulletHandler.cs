@@ -47,17 +47,15 @@ public class BulletHandler : MonoBehaviour {
 				
 				muzzle.SetActive(true);
 				muzzle.GetComponent<ParticleSystem>().Play();
-				
-				//gun.transform.position += new Vector3 (0, 0, -pullback );
-
+	
 				GetComponent<AudioSource>().Play();
 
-				iTween.MoveBy (gun, iTween.Hash ("z", 5.0f, 
-				                                        "time", 0.1f, 
-				                                        "looptype", iTween.LoopType.none,
-				                                        "easetype", iTween.EaseType.easeInElastic,
-				                                 		"oncomplete", "recoilOver",
-				                                 		"oncompletetarget", this.gameObject));
+				iTween.MoveBy (gun, iTween.Hash ("z", 8.0f, 
+				                                 "time", 0.1f, 
+				                                 "looptype", iTween.LoopType.none,
+				                                 "easetype", iTween.EaseType.easeInElastic,
+				                                 "oncomplete", "recoilOver",
+				                                  "oncompletetarget", this.gameObject));
 
 			} else if ( ammo == 0) {
 				Debug.Log("NO AMMO");
@@ -73,15 +71,15 @@ public class BulletHandler : MonoBehaviour {
 	}
 
 	void recoilOver() {
-		Debug.Log ("LOL");
-		iTween.MoveBy (gun, iTween.Hash ("z", -5.0f, 
-		                                 "time", 0.5f, 
+		iTween.MoveBy (gun, iTween.Hash ("z", -8.0f, 
+		                                 "time", 0.3f, 
 		                                 "looptype", iTween.LoopType.none,
 		                                 "easetype", iTween.EaseType.easeInOutSine));
+
 	}
 
 	 IEnumerator StartRemoveMuzzle() {
-         yield return new WaitForSeconds(0.15f);
+         yield return new WaitForSeconds(0.4f);
          Debug.Log("Kill Muzzle Flash");
          
          muzzle.GetComponent<ParticleSystem>().Stop();

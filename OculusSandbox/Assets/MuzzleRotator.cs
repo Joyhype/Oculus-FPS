@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MuzzleRotator : MonoBehaviour {
 
-	public float RotationSpeed;
+	private float RotationSpeed = 700f;
 
 	// Use this for initialization
 	void Start () {
