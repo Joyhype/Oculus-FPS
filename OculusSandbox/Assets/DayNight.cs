@@ -11,7 +11,10 @@ public class DayNight : MonoBehaviour {
 		yield return new WaitForSeconds(0);
 
 		float lerp = Mathf.PingPong(Time.time, duration) / duration;
-        RenderSettings.skybox.SetColor("_Tint", Color.Lerp(colorDay, colorNight, lerp));
+        //RenderSettings.skybox.SetColor("_Tint", Color.Lerp(colorDay, colorNight, lerp));
+
+        //RenderSettings.fog = true;
+        //RenderSettings.fogColor = Color.black;
 		
 		Debug.Log("Night Time");
 	}
