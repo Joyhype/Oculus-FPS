@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 6b67810967458491286932939d2f29d6
-timeCreated: 1428980337
+guid: f07de6c6fb8534d3cb10a85c50548537
+timeCreated: 1429026653
 licenseType: Pro
 ModelImporter:
   serializedVersion: 18
@@ -22,7 +22,6 @@ ModelImporter:
     4300000: pCube1
     4300002: pCube2
     4300004: pCube3
-    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -76,7 +75,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
