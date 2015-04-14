@@ -21,12 +21,12 @@ public class BisonWalk : MonoBehaviour {
 	}
 
 	void rotateBison() {
-		iTween.RotateBy (this.gameObject, iTween.Hash (
+		/*iTween.RotateBy (this.gameObject, iTween.Hash (
 											"y", 90f, 
 											"time", 20f, 
 											"looptype", iTween.LoopType.none,
 											"easetype", iTween.EaseType.easeInOutSine
-       	));
+       	));*/
 	}
 
 
