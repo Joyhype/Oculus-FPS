@@ -32,7 +32,6 @@ public class BulletHandler : MonoBehaviour {
 		muzzle.transform.Rotate(Vector3.up * Time.deltaTime, Space.World);
 
 		//Reset Gun After Recoil;
-
  	}
 
 	void fireBullet() {
