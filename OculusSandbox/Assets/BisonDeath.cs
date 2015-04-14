@@ -10,7 +10,7 @@ public class BisonDeath : MonoBehaviour {
 	}
 
 	void onCollisionEnter (Collision col) {
-		if (col.gameObject.name == "gun") {
+		if (col.gameObject.name == "bullet") {
 			Debug.Log("Bullet Hit");
 		}
 	}
