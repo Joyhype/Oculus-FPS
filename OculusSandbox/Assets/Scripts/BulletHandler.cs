@@ -79,7 +79,7 @@ public class BulletHandler : MonoBehaviour {
 	}
 
 	 IEnumerator StartRemoveMuzzle() {
-         yield return new WaitForSeconds(0.3f);
+         yield return new WaitForSeconds(0.12f);
          Debug.Log("Kill Muzzle Flash");
          
          muzzle.GetComponent<ParticleSystem>().Stop();
