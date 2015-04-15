@@ -4,29 +4,34 @@ using System.Collections;
 public class BisonWalk : MonoBehaviour {
 
 	void Start() {	
-		/*iTween.MoveBy (this.gameObject, iTween.Hash ("z", 250.0f, 
-			                                 "time", 4f, 
-			                                 "looptype", iTween.LoopType.pingPong,
-			                                 "easetype", iTween.EaseType.easeInOutSine
-		));*/
-
 		iTween.MoveBy (this.gameObject, iTween.Hash (
 											"z", 450f,
 											"time", 4f, 
 											"looptype", iTween.LoopType.none,
 											"easetype", iTween.EaseType.easeInOutSine,
-											"oncomplete", "rotateBison",
+											"oncomplete", "RotateBison",
 											"oncompletetarget", this.gameObject
 		));
 	}
 
 	void RotateBison() {
 		iTween.RotateTo (this.gameObject, iTween.Hash (
-											"z", 180f, 
-											"time", 5f, 
+											"y", -360f, 
+											"time", 1f, 
 											"looptype", iTween.LoopType.none,
 											"easetype", iTween.EaseType.easeInOutSine,
 											"oncomplete", "WalkBack",
+											"oncompletetarget", this.gameObject
+       	));
+	}
+
+	void RotateBison2() {
+		iTween.RotateTo (this.gameObject, iTween.Hash (
+											"y", 180f, 
+											"time", 1f, 
+											"looptype", iTween.LoopType.none,
+											"easetype", iTween.EaseType.easeInOutSine,
+											"oncomplete", "WalkBack2",
 											"oncompletetarget", this.gameObject
        	));
 	}
@@ -37,10 +42,19 @@ public class BisonWalk : MonoBehaviour {
 											"time", 4f, 
 											"looptype", iTween.LoopType.none,
 											"easetype", iTween.EaseType.easeInOutSine,
-											"oncomplete", "rotateBison",
+											"oncomplete", "RotateBison2",
 											"oncompletetarget", this.gameObject
 		));
 	}
 
-
+	void WalkBack2() {
+			iTween.MoveBy (this.gameObject, iTween.Hash (
+											"z", 450f,
+											"time", 4f, 
+											"looptype", iTween.LoopType.none,
+											"easetype", iTween.EaseType.easeInOutSine,
+											"oncomplete", "RotateBison",
+											"oncompletetarget", this.gameObject
+		));
+	}
 }
