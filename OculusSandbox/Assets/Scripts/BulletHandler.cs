@@ -11,7 +11,7 @@ public class BulletHandler : MonoBehaviour {
 	public float delayedTime = 2f;
 	private float counter = 2f;
 
-	private int ammo = 10000;
+	private int ammo = 1003;
 	private float pullback = 5f;
 	
 	Vector3 startPos;
@@ -78,9 +78,7 @@ public class BulletHandler : MonoBehaviour {
 	}
 
 	 IEnumerator StartRemoveMuzzle() {
-         yield return new WaitForSeconds(0.12f);
-         Debug.Log("Kill Muzzle Flash");
-         
+         yield return new WaitForSeconds(0.12f);         
          muzzle.GetComponent<ParticleSystem>().Stop();
          muzzle.SetActive(false);
 

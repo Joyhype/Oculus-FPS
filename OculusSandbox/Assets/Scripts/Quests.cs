@@ -19,23 +19,21 @@ public class Quests : MonoBehaviour {
             playerDoingQuest = true; 
         }
         
-        else if (getQuest == _Quests.Cactus) {
+        if (getQuest == _Quests.Cactus) {
         	playerDoingQuest = true; 
         }
 
         else if (getQuest == _Quests.None) {
-        	Debug.Log("Quests are available!");
         	playerDoingQuest = false; 
         }
     }
 
 	void InQuest() {
 		if (playerDoingQuest == true) {
-			Debug.Log("Player is Doing a quest");
+			//Debug.Log("Player is Doing a quest");
 		} else if (playerDoingQuest == false) {
-			Debug.Log("Player is Not Doing A Quest");
+			//Debug.Log("Player is Not Doing A Quest");
 		}
-
 	} 
 
 	void Update() {

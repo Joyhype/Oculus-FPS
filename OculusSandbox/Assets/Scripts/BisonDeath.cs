@@ -4,13 +4,12 @@ using System.Collections;
 public class BisonDeath : MonoBehaviour {
 
 	public GameObject bullet; 
+	public GameObject bison;
 	
-	void Start () {
-	
-	}
+	void Start () {}
 
-	void onCollisionEnter (Collision col) {
-		if (col.gameObject.name == "bullet") {
+	void OnCollisionEnter(Collision c) {
+		if (c.gameObject.tag == "Bullet") {
 			Debug.Log("Bullet Hit");
 		}
 	}
