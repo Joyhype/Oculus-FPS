@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 34c94643855ab3944a5ee2953fa712d2
+timeCreated: 1425940758
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - activeTriggerMaterial: {fileID: 2100000, guid: 4e241e5fb337be2488f4a9eb14f2e90d,
+      type: 2}
+  - inactiveTriggerMaterial: {fileID: 2100000, guid: f3e0ef8d9cb9b0d45922c586c0444ea0,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

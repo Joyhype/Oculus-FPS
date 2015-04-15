@@ -14,15 +14,16 @@ public class BisonDeath : MonoBehaviour {
 			Debug.Log("Bullet Hit");
 			SpawnBlood();
 			
+			//Rotate
 			iTween.RotateTo (this.gameObject, iTween.Hash (
 											"z", 90f, 
 											"time", 0.4f,
 											"y", -10f,
-											"x", 50f,
 											"looptype", iTween.LoopType.none,
 											"easetype", iTween.EaseType.easeInOutSine
        		));
 
+			//Stuff Bison onto the Ground
        		iTween.MoveBy (this.gameObject, iTween.Hash (
 											"y", -65f,
 											"time", 0.4f, 

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dc2c0abfca13eb74290e68098905f9ca
+timeCreated: 1425940734
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - observedCameraComponent: {instanceID: 0}
+  - sphereMesh: {fileID: 4300002, guid: 9f5d3bfdcf3181449b6aa9f34904321b, type: 3}
+  - distanceMaterial: {fileID: 2100000, guid: 2e727836e49622c459813382e00f8081, type: 2}
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: 7d668d2726b42a046995a341bd4a578d, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

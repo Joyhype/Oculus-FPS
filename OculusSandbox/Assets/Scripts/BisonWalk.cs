@@ -20,13 +20,26 @@ public class BisonWalk : MonoBehaviour {
 		));
 	}
 
-	void rotateBison() {
-		/*iTween.RotateBy (this.gameObject, iTween.Hash (
-											"y", 90f, 
-											"time", 20f, 
+	void RotateBison() {
+		iTween.RotateTo (this.gameObject, iTween.Hash (
+											"z", 180f, 
+											"time", 5f, 
 											"looptype", iTween.LoopType.none,
-											"easetype", iTween.EaseType.easeInOutSine
-       	));*/
+											"easetype", iTween.EaseType.easeInOutSine,
+											"oncomplete", "WalkBack",
+											"oncompletetarget", this.gameObject
+       	));
+	}
+
+	void WalkBack() {
+			iTween.MoveBy (this.gameObject, iTween.Hash (
+											"z", 450f,
+											"time", 4f, 
+											"looptype", iTween.LoopType.none,
+											"easetype", iTween.EaseType.easeInOutSine,
+											"oncomplete", "rotateBison",
+											"oncompletetarget", this.gameObject
+		));
 	}
 
 
