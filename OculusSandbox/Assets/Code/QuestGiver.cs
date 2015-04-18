@@ -15,11 +15,19 @@ public class QuestGiver : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update() {
-		showingQuests = ( transform.position - player.transform.position ).sqrMagnitude < 5;
+		//showingQuests = ( transform.position - player.transform.position ).sqrMagnitude < 5;
 		
 	}
 
 	void OnGazed() {
+		Debug.Log( "HIT" );
+	}
 
+	void OnGaze() {
+		Debug.Log( "Gaze" );
+	}
+
+	void OnLostGaze() {
+		Debug.Log( "Lost" );
 	}
 }

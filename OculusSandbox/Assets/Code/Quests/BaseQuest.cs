@@ -4,14 +4,14 @@ using System.Collections;
 public class BaseQuest : MonoBehaviour {
 
 	public bool IsActive;
+	public bool IsDone;
 
-	// Use this for initialization
-	void Start() {
-
+	void Awake() {
+		InformationHandler.OnItemPicked += OnItemPicked;
+		InformationHandler.OnMobKilled += OnMobKilled;
 	}
 
-	// Update is called once per frame
-	void Update() {
+	public virtual void OnItemPicked( object sender, InformationHandler.ItemEventArgs args ) { }
 
-	}
+	public virtual void OnMobKilled( object sender, InformationHandler.MobEventArgs args ) { }
 }

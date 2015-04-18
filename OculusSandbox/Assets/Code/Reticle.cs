@@ -15,11 +15,6 @@ public class Reticle : MonoBehaviour {
 	// Use this for initialization
 	void Start() {
 		gazeLayer = LayerMask.GetMask( "Interactable" );
-
-		var renderers = GetComponentsInChildren<Renderer>();
-		foreach ( var item in renderers ) {
-			Debug.Log( item.sortingOrder );
-		}
 	}
 
 	// Update is called once per frame
@@ -37,7 +32,13 @@ public class Reticle : MonoBehaviour {
 			if ( gazed != lastGazed ) {
 				ignoreGaze = false;
 				ResetScale();
+
+				if ( lastGazed != null ) {
+					lastGazed.SendMessage( "OnLostGaze", SendMessageOptions.DontRequireReceiver );
+				}
+
 				lastGazed = gazed;
+				lastGazed.SendMessage( "OnGaze", SendMessageOptions.DontRequireReceiver );
 			} else {
 				if ( info.distance > GazeDistance ) {
 					ResetScale();
@@ -54,6 +55,11 @@ public class Reticle : MonoBehaviour {
 			}
 		} else {
 			ignoreGaze = false;
+
+			if ( lastGazed != null ) {
+				lastGazed.SendMessage( "OnLostGaze", SendMessageOptions.DontRequireReceiver );
+				lastGazed = null;
+			}
 
 			if ( ResetScale() ) {
 				DisableGazeReticle();

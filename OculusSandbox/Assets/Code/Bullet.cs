@@ -11,6 +11,8 @@ public class Bullet : MonoBehaviour {
 	}
 
 	void OnTriggerEnter( Collider other ) {
-		Debug.Log( other.gameObject.name );
+		if ( LayerMask.LayerToName( other.gameObject.layer ) == "Killable" ) {
+			InformationHandler.KilledMob( other.gameObject.tag );
+		}
 	}
 }
