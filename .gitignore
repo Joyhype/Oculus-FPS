@@ -14,7 +14,7 @@
 *.gif
 
 *.userprefs
-builds/
+[Bb]uilds/
 EditorBuildSettings.asset
 source/ProjectSettings/EditorBuildSettings.asset
 [Ss]ource-csharp*/
