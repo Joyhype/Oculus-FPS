@@ -3,13 +3,15 @@ using System.Collections;
 
 public class BaseQuest : MonoBehaviour {
 
+	public bool IsActive;
+
 	// Use this for initialization
-	void Start () {
-	
+	void Start() {
+
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
-	
+	void Update() {
+
 	}
 }
