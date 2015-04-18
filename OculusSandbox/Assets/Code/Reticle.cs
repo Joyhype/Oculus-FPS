@@ -21,11 +21,6 @@ public class Reticle : MonoBehaviour {
 	void Update() {
 		RaycastHit info;
 		if ( Physics.Raycast( transform.position, transform.forward, out info, HighlightDistance, gazeLayer ) ) {
-			if ( ignoreGaze ) {
-				ResetScale();
-				return;
-			}
-
 			EnableGazeReticle();
 
 			var gazed = info.collider.gameObject;
@@ -34,13 +29,19 @@ public class Reticle : MonoBehaviour {
 				ResetScale();
 
 				if ( lastGazed != null ) {
-					lastGazed.SendMessage( "OnLostGaze", SendMessageOptions.DontRequireReceiver );
+					lastGazed.BroadcastMessage( "OnLostGaze", SendMessageOptions.DontRequireReceiver );
 				}
 
 				lastGazed = gazed;
-				lastGazed.SendMessage( "OnGaze", SendMessageOptions.DontRequireReceiver );
+				lastGazed.BroadcastMessage( "OnGaze", SendMessageOptions.DontRequireReceiver );
 			} else {
 				if ( info.distance > GazeDistance ) {
+					ignoreGaze = false;
+					ResetScale();
+					return;
+				}
+
+				if ( ignoreGaze ) {
 					ResetScale();
 					return;
 				}
@@ -50,14 +51,14 @@ public class Reticle : MonoBehaviour {
 
 				if ( scale == 1 ) {
 					ignoreGaze = true;
-					lastGazed.SendMessage( "OnGazed", SendMessageOptions.RequireReceiver );
+					lastGazed.BroadcastMessage( "OnGazed", SendMessageOptions.RequireReceiver );
 				}
 			}
 		} else {
 			ignoreGaze = false;
 
 			if ( lastGazed != null ) {
-				lastGazed.SendMessage( "OnLostGaze", SendMessageOptions.DontRequireReceiver );
+				lastGazed.BroadcastMessage( "OnLostGaze", SendMessageOptions.DontRequireReceiver );
 				lastGazed = null;
 			}
 
@@ -77,7 +78,7 @@ public class Reticle : MonoBehaviour {
 	}
 
 	private bool ResetScale() {
-		var scale = Mathf.Max( Gazer.transform.localScale.x - ( Time.deltaTime * 4.5f ), 0.2f );
+		var scale = Mathf.Max( Gazer.transform.localScale.x - ( Time.deltaTime * 5f ), 0.2f );
 		Gazer.transform.localScale = new Vector3( scale, scale, 1 );
 
 		return scale == 0.2f;

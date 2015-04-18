@@ -7,7 +7,7 @@ public class CollectQuest : BaseQuest {
 	public string[] ItemTags;
 	public int[] ItemCounts;
 
-	private Dictionary<string, int> items;
+	private Dictionary<string, int> items = new Dictionary<string, int>();
 
 	// Use this for initialization
 	void Start() {
