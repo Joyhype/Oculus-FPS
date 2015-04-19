@@ -5,7 +5,7 @@ public class BisonWalk : MonoBehaviour {
 
 	void Start() {	
 		iTween.MoveBy (this.gameObject, iTween.Hash (
-											"z", 450f,
+											"z", 50f,
 											"time", 4f, 
 											"looptype", iTween.LoopType.none,
 											"easetype", iTween.EaseType.easeInOutSine,
@@ -14,6 +14,7 @@ public class BisonWalk : MonoBehaviour {
 		));
 	}
 
+	//Rotate Bison
 	void RotateBison() {
 		iTween.RotateTo (this.gameObject, iTween.Hash (
 											"y", -360f, 
@@ -25,6 +26,7 @@ public class BisonWalk : MonoBehaviour {
        	));
 	}
 
+	//Rotate Bison Again
 	void RotateBison2() {
 		iTween.RotateTo (this.gameObject, iTween.Hash (
 											"y", 180f, 
@@ -38,7 +40,7 @@ public class BisonWalk : MonoBehaviour {
 
 	void WalkBack() {
 			iTween.MoveBy (this.gameObject, iTween.Hash (
-											"z", 450f,
+											"z", 50f,
 											"time", 4f, 
 											"looptype", iTween.LoopType.none,
 											"easetype", iTween.EaseType.easeInOutSine,
@@ -49,7 +51,7 @@ public class BisonWalk : MonoBehaviour {
 
 	void WalkBack2() {
 			iTween.MoveBy (this.gameObject, iTween.Hash (
-											"z", 450f,
+											"z", 50f,
 											"time", 4f, 
 											"looptype", iTween.LoopType.none,
 											"easetype", iTween.EaseType.easeInOutSine,
