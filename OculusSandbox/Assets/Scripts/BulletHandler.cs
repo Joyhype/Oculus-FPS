@@ -35,7 +35,12 @@ public class BulletHandler : MonoBehaviour {
  	}
 
 	void fireBullet() {
+
+		//Did the player click the button and is there spacing between the 
+		//Last fire of the button
 		if (Input.GetMouseButtonDown(0) && counter > delayedTime) {
+			
+			//Check if Player has Ammo
 			if ( ammo >= 1 ) {
 				
 				counter = 0;
@@ -49,7 +54,7 @@ public class BulletHandler : MonoBehaviour {
 	
 				GetComponent<AudioSource>().Play();
 
-				iTween.MoveBy (gun, iTween.Hash ("z", 8.0f, 
+				iTween.MoveBy (gun, iTween.Hash ("z", 1f, 
 				                                 "time", 0.1f, 
 				                                 "looptype", iTween.LoopType.none,
 				                                 "easetype", iTween.EaseType.easeInElastic,
@@ -70,8 +75,8 @@ public class BulletHandler : MonoBehaviour {
 	}
 
 	void recoilOver() {
-		iTween.MoveBy (gun, iTween.Hash ("z", -8.0f, 
-		                                 "time", 0.3f, 
+		iTween.MoveBy (gun, iTween.Hash ("z", -1f, 
+		                                 "time", 0.1f, 
 		                                 "looptype", iTween.LoopType.none,
 		                                 "easetype", iTween.EaseType.easeInOutSine));
 
@@ -81,8 +86,5 @@ public class BulletHandler : MonoBehaviour {
          yield return new WaitForSeconds(0.12f);         
          muzzle.GetComponent<ParticleSystem>().Stop();
          muzzle.SetActive(false);
-
-         //Reset Gun After Recoil
-		 //gun.transform.position += new Vector3 (0, 0, -pullback );
      }
 }

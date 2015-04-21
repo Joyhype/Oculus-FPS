@@ -20,7 +20,7 @@ public class GunSway : MonoBehaviour {
 
 	void Start() {
 		iTween.MoveBy (gun, iTween.Hash ("y", -0.1f, 
-		                                      "time", 4f, 
+		                                      "time", 3f, 
 		                                      "looptype", iTween.LoopType.pingPong,
 		                                      "easetype", iTween.EaseType.easeInOutBack));
 	}
