@@ -14,8 +14,12 @@ public class Gun : MonoBehaviour {
 
 	public float GunSway = 0.02f;
 
+	private float originalZ;
+
 	// Use this for initialization
 	void Start() {
+		originalZ = transform.localPosition.z;
+
 		iTween.MoveBy( gameObject,
 			iTween.Hash( "y", -GunSway, "time", 2f,
 			"looptype", iTween.LoopType.pingPong,
@@ -36,11 +40,18 @@ public class Gun : MonoBehaviour {
 				timer = DelayBetweenShot;
 				Ammo--;
 
+				//iTween.Stop(gameObject, "recoilOne");
+				//iTween.Stop(gameObject, "recoilTwo");
+
+				// var pos = transform.localPosition;
+				// pos.z = originalZ;
+				// transform.localPosition = pos;
+
 				iTween.MoveBy( gameObject,
-					iTween.Hash( "z", -0.15f, "time", 0.1f,
+					iTween.Hash("name", "recoilOne", "z", -0.15f, "time", 0.1f,
 					"easetype", iTween.EaseType.easeOutElastic ) );
 				iTween.MoveBy( gameObject,
-					iTween.Hash( "z", 0.15f, "time", 0.1f, "delay", 0.1f,
+					iTween.Hash("name", "recoilTwo", "z", 0.15f, "time", 0.1f, "delay", 0.11f,
                     "easetype", iTween.EaseType.linear ) );
 			}
 		}

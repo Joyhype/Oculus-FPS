@@ -39,7 +39,7 @@ public class LunarCycle : MonoBehaviour {
 		var prevAngle = Angle;
 		Angle += step * Time.deltaTime;
 
-		if ( prevAngle < 180 && Angle >= 180 ) {
+		if ( prevAngle < 190 && Angle >= 190 ) {
 			OnSet.Invoke();
 		} else if ( prevAngle < 360 && Angle >= 360 ) {
 			OnRise.Invoke();

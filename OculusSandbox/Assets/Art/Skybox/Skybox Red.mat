@@ -92,15 +92,7 @@ Material:
       data:
         first:
           name: _Exposure
-        second: 1
-      data:
-        first:
-          name: _SunSize
-        second: 0
-      data:
-        first:
-          name: _AtmosphereThickness
-        second: 0
+        second: 1.42999995
       data:
         first:
           name: _SrcBlend
@@ -164,17 +156,9 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _SkyTint
-        second: {r: 1, g: .323529422, b: .323529422, a: 1}
-      data:
-        first:
-          name: _GroundColor
-        second: {r: 1, g: .198529422, b: .198529422, a: 1}
-      data:
-        first:
           name: _EmissionColorUI
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _Tint
-        second: {r: .147058845, g: .717646897, b: 1, a: .501960814}
+        second: {r: .29411763, g: .766328454, b: 1, a: .501960814}
