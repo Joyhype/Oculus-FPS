@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Gun : MonoBehaviour {
@@ -34,22 +34,17 @@ public class Gun : MonoBehaviour {
 
 		if ( Input.GetMouseButtonDown( 0 ) ) {
 			if ( Ammo > 0 && timer <= 0 ) {
+
 				Instantiate( BulletPrefab, GunTip.transform.position, transform.rotation );
 				Instantiate( MuzzleFlashPrefab, GunTip.transform.position, transform.rotation );
 
 				timer = DelayBetweenShot;
 				Ammo--;
 
-				//iTween.Stop(gameObject, "recoilOne");
-				//iTween.Stop(gameObject, "recoilTwo");
-
-				// var pos = transform.localPosition;
-				// pos.z = originalZ;
-				// transform.localPosition = pos;
-
 				iTween.MoveBy( gameObject,
 					iTween.Hash("name", "recoilOne", "z", -0.15f, "time", 0.1f,
 					"easetype", iTween.EaseType.easeOutElastic ) );
+				
 				iTween.MoveBy( gameObject,
 					iTween.Hash("name", "recoilTwo", "z", 0.15f, "time", 0.1f, "delay", 0.11f,
                     "easetype", iTween.EaseType.linear ) );

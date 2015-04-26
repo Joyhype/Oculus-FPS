@@ -11,7 +11,9 @@ public class Quests : MonoBehaviour {
     public enum _Quests {
         None,
         Cactus,
-        Bison
+        Bison,
+        BossFight,
+        Gold
     }
   
     void CheckForQuest() {
@@ -43,11 +45,11 @@ public class Quests : MonoBehaviour {
 	}
 
 	void isQuestComplete() {
-		if (questCompleted == true) {
-			Debug.Log("Player has completed a quest");
 
-			//Do save data 
-			//Mark Quest Complete
+		if ( !questCompleted ) {
+			Debug.Log("Player has completed a quest!");
+		} else if ( questCompleted == false ) {
+			Debug.Log("Player hasn't done a quest!");
 		}
 	}
 }

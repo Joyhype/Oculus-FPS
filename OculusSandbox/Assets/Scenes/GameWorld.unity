@@ -2203,8 +2203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 208639395}
-  speed: 8
 --- !u!212 &208639398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2784,7 +2782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &280461946
 Transform:
   m_ObjectHideFlags: 0
@@ -3368,8 +3366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 306827832}
-  speed: 8
 --- !u!1 &309250626
 GameObject:
   m_ObjectHideFlags: 0
@@ -3863,8 +3859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 365706602}
-  speed: 8
 --- !u!212 &365706605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4502,7 +4496,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa9c9f1f3b0a4d5bb910819f9895e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 5
 --- !u!1 &420140792
 GameObject:
   m_ObjectHideFlags: 0
@@ -6757,8 +6750,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 612240790}
-  speed: 8
 --- !u!212 &612240793
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8898,8 +8889,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 832766737}
-  speed: 8
 --- !u!212 &832766740
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9020,8 +9009,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 844391126}
-  speed: 8
 --- !u!212 &844391129
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9173,8 +9160,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 856034308}
-  speed: 8
 --- !u!212 &856034311
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9555,8 +9540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 899747372}
-  speed: 8
 --- !u!212 &899747375
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10059,8 +10042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 957052727}
-  speed: 8
 --- !u!212 &957052730
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12400,8 +12381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 1066033055}
-  speed: 8
 --- !u!212 &1066033058
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17295,8 +17274,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 1408390184}
-  speed: 8
 --- !u!212 &1408390187
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17563,8 +17540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 1425216662}
-  speed: 8
 --- !u!212 &1425216665
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20088,8 +20063,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 1536317730}
-  speed: 8
 --- !u!212 &1536317733
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21556,10 +21529,10 @@ Light:
   m_Enabled: 1
   serializedVersion: 6
   m_Type: 0
-  m_Color: {r: .149301901, g: .0836937949, b: .948529422, a: 1}
-  m_Intensity: 2.21000004
+  m_Color: {r: .256661177, g: .0836937949, b: .948529422, a: 1}
+  m_Intensity: 4.65999985
   m_Range: 1e+06
-  m_SpotAngle: 118.599998
+  m_SpotAngle: 129.399994
   m_CookieSize: .100000001
   m_Shadows:
     m_Type: 0
@@ -22316,7 +22289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1678355627
 Transform:
   m_ObjectHideFlags: 0
@@ -28801,17 +28774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e9f26d2005bc406297c1c5401f231d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorNight:
-    r: .067798458
-    g: .0749269351
-    b: .0808823705
-    a: 1
-  colorDay:
-    r: .0735294223
-    g: .654969752
-    b: 1
-    a: 1
-  duration: 10
 --- !u!1 &1917995231
 GameObject:
   m_ObjectHideFlags: 0
@@ -29333,7 +29295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -45000
-  projecticle: {fileID: 5459770, guid: bcd0d6dd9cd9f4ca69216e38ddc5ca7b, type: 2}
+  projecticle: {fileID: 5449500, guid: 59d6c2aaf953745e59c7bacabd27021e, type: 2}
   gun: {fileID: 547205311}
   delayedTime: .100000001
   muzzle: {fileID: 1114319347}
@@ -30048,8 +30010,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 1969792161}
-  speed: 8
 --- !u!212 &1969792164
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31978,7 +31938,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa9c9f1f3b0a4d5bb910819f9895e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpeed: 5
 --- !u!23 &2094089002
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32118,8 +32077,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 2097166264}
-  speed: 8
 --- !u!212 &2097166267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32526,8 +32483,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e16e21c50b3874a89b39fb51ec8f0788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  c1: {fileID: 2128982967}
-  speed: 8
 --- !u!212 &2128982970
 SpriteRenderer:
   m_ObjectHideFlags: 0

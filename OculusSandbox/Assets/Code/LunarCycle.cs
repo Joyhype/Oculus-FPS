@@ -27,8 +27,6 @@ public class LunarCycle : MonoBehaviour {
 	// Update is called once per frame
 	void Update() {
 		transform.LookAt( centerPoint );
-		//Don't actually need to lerp
-		//transform.position = Vector3.Lerp( transform.position, newPosition, 0.1f );
 
 		if ( Application.isEditor && !Application.isPlaying ) {
 			CalculateAngleAndPosition();
@@ -39,7 +37,7 @@ public class LunarCycle : MonoBehaviour {
 		var prevAngle = Angle;
 		Angle += step * Time.deltaTime;
 
-		if ( prevAngle < 190 && Angle >= 190 ) {
+		if ( prevAngle < 195 && Angle >= 195 ) {
 			OnSet.Invoke();
 		} else if ( prevAngle < 360 && Angle >= 360 ) {
 			OnRise.Invoke();

@@ -16,6 +16,7 @@ public class InformationHandler : MonoBehaviour {
 			Tag = tag;
 		}
 	}
+	
 	public class ItemEventArgs : EventArgs {
 
 		public readonly string Tag;

@@ -30,8 +30,7 @@ public class BulletHandler : MonoBehaviour {
 	void Update () {
 		fireBullet();
 		muzzle.transform.Rotate(Vector3.up * Time.deltaTime, Space.World);
-
-		//Reset Gun After Recoil;
+		Debug.Log("Bullet is Present");
  	}
 
 	void fireBullet() {
@@ -62,7 +61,7 @@ public class BulletHandler : MonoBehaviour {
 				                                  "oncompletetarget", this.gameObject));
 
 			} else if ( ammo == 0) {
-				Debug.Log("NO AMMO");
+				Debug.Log("AMMO EMPTY");
 			}
 		} 
 		
