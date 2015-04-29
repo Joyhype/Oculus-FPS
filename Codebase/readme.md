@@ -1,3 +1,5 @@
+I have a couple of prefabs in the Codebase project, check it out (the quest for instance)
+
 Player stuff:
 - LootGrabber goes onto the player model (grabs collectibles from ground)
 - DryThroat goes onto the player (Doesn't really do anything yet though)
