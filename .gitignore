@@ -8,10 +8,6 @@
 *.unityproj
 *.sln
 *.suo
-*.png
-*.psd
-*.jpg 
-*.gif
 
 *.userprefs
 [Bb]uilds/
