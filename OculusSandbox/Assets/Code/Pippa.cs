@@ -20,10 +20,10 @@ public class Pippa : MonoBehaviour {
 
 	// Use this for initialization
 	void Start() {
-		if ( BulletPrefab == null || MuzzleFlashPrefab == null || GunTip == null ) {
-			Debug.LogError( "Please put in the prefabs and the gun tip" );
-			Destroy( gameObject );
-		}
+		//if ( BulletPrefab == null || MuzzleFlashPrefab == null || GunTip == null ) {
+		//	Debug.LogError( "Please put in the prefabs and the gun tip" );
+		//	Destroy( gameObject );
+		//}
 
 		iTween.MoveBy( gameObject,
 			iTween.Hash( "y", -GunSwayDistance, "time", 2f,
@@ -41,7 +41,7 @@ public class Pippa : MonoBehaviour {
 			} else {
 				if ( Input.GetMouseButtonDown( 0 ) ) {
 					Instantiate( BulletPrefab, GunTip.transform.position, transform.rotation );
-					Instantiate( MuzzleFlashPrefab, GunTip.transform.position, transform.rotation );
+					//Instantiate( MuzzleFlashPrefab, GunTip.transform.position, transform.rotation );
 
 					currentAmmo--;
 

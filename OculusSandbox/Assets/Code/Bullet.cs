@@ -8,9 +8,11 @@ public class Bullet : MonoBehaviour {
 	// Update is called once per frame
 	void Update() {
 		if ( Application.isEditor ) {
-			Debug.DrawLine( transform.position, transform.position + transform.forward * 5, Color.black );
-		} else {
-			transform.position += transform.forward * Speed * Time.deltaTime;
+			Debug.DrawLine( transform.position, transform.position - transform.forward * 5, Color.black );
+		}
+
+		if ( Application.isPlaying ) {
+			transform.position -= transform.forward * Speed * Time.deltaTime;
 		}
 	}
 
