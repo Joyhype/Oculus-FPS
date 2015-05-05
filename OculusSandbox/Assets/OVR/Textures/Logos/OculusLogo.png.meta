@@ -1,9 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 979c28579b4554931966eaf75342c00a
 timeCreated: 1430681055
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName: {}
+=======
+guid: a56d69833b6471340bd0029e57449b72
+TextureImporter:
+>>>>>>> origin/master
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -22,17 +27,24 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+<<<<<<< HEAD
   cubemapConvolution: 0
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 2048
+=======
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+>>>>>>> origin/master
   textureSettings:
     filterMode: -1
     aniso: -1
     mipBias: -1
     wrapMode: -1
+<<<<<<< HEAD
   nPOTScale: 1
   lightmap: 0
   rGBM: 0
@@ -53,3 +65,11 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  textureType: 5
+  buildTargetSettings: []
+  userData: 
+>>>>>>> origin/master

@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 2b7b1f4a039244f09a49d78d6b9fab0e
 timeCreated: 1430681055
 licenseType: Pro
@@ -9,6 +10,15 @@ TextureImporter:
     mipMapMode: 0
     enableMipMap: 1
     linearTexture: 0
+=======
+guid: e12af33dddc81a840b5faf2a68953242
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 1
+>>>>>>> origin/master
     correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
@@ -22,6 +32,7 @@ TextureImporter:
   isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
+<<<<<<< HEAD
   cubemapConvolution: 0
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
@@ -36,6 +47,18 @@ TextureImporter:
   nPOTScale: 1
   lightmap: 0
   rGBM: 0
+=======
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+>>>>>>> origin/master
   compressionQuality: 50
   spriteMode: 0
   spriteExtrude: 1
@@ -44,12 +67,20 @@ TextureImporter:
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+<<<<<<< HEAD
   alphaIsTransparency: 0
   textureType: -1
+=======
+  alphaIsTransparency: 1
+  textureType: 2
+>>>>>>> origin/master
   buildTargetSettings: []
   spriteSheet:
     sprites: []
   spritePackingTag: 
   userData: 
+<<<<<<< HEAD
   assetBundleName: 
   assetBundleVariant: 
+=======
+>>>>>>> origin/master
